@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Railsgirls</title>
+    <title>Krásy slovenskej prírody</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
@@ -20,23 +20,42 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">The Idea app</a>
+      <a class="navbar-brand" href="/">Krásy slovenskej prírody</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="/ideas">Ideas</a></li>
-        <li ><%= link_to 'New Idea', new_idea_path %></li>
-        <li><a href="/pages/info">Info</a></li>
+        <li><a href="/ideas">Príspevky</a></li>
+        <li ><%= link_to 'Nový príspevok', new_idea_path %></li>
+        <li><a href="/pages/info">O projekte</a></li>
       </ul>
+      <p class="navbar-text pull-right">
+<% if user_signed_in? %>
+  Prihlásený <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= image_tag current_user.gravatar_url %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
+</p>
     </div>
   </div>
 </nav>
     <div class="container">
-  <%= yield %>
-</div>
+      <div class="container">
+        <% if notice %>
+          <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+        <%= yield %>
+      </div>
+  </div>
 <footer>
   <div class="container">
-    Rails Girls <%= Time.now.year %>
+    BioClio team <%= Time.now.year %>
   </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
