@@ -20,14 +20,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Vodný plán Slovenskej republiky</a>
+      <a class="navbar-brand" href="/pages/vodny_plan">Vodný plán Slovenskej republiky</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><a href="/ideas">Príspevky</a></li>
-        <li><a href="/pages/info">O projekte</a></li>
-        <li><a href="/pages/vodny_plan">Vodný plán</a></li>
+        <li><a href="/pages/info">Čo je to vodný plán?</a></li>
       </ul>
+      <%= link_to "https://www.minzp.sk/" do %>
+          <%= image_tag 'mzpvelke.jpg', :class => "logo_image" %>
+      <% end %>
     </div>
   </div>
 </nav>

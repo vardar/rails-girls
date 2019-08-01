@@ -3,4 +3,6 @@ class PagesController < ApplicationController
   end
   def vodny_plan
   end
+  def oldplan
+  end
 end

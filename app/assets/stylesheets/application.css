@@ -1,6 +1,6 @@
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
+ * listed below. #ffc773 toto je schovaná pôvodná farba pozadia navbaru #ffc775
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
@@ -17,13 +17,17 @@
  footer { margin-top: 100px; }
  table, td, th { vertical-align: middle; border: none; }
  th { border-bottom: 1px solid #DDD; }
- .navbar { min-height: 38px; background-color: #ffc773;}
+ .navbar { min-height: 38px; background-color: #F3F3;}
  .navbar a.brand { font-size: 18px; }
 .navbar a.brand:hover {
- color: #fff;
+ color: white;
  background-color: #ffc775;
  text-decoration: none;}
  footer {
   background-color: #ebebeb;
   padding: 15px 6;
+}
+
+.logo_image {
+  width: 250px;
 }
