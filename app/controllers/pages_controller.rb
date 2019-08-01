@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   end
   def oldplan
   end
+  def newplan
+  end
 end

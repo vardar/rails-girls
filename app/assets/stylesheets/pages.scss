@@ -2,12 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .style_image {
-  border: 2px solid #FFFF; width: 50%; margin-top: 15px; background-color: #FFFF;
+  border: 1px solid #FFFF; width: 50%; margin-bottom: 15px; background-color: #FFFF;
 }
 
-img:hover {border-color: #F25; border-style: dotted;
+img:hover {border-color: #A9A9; border-style: solid;
 }
 
 .static_image {
   width: 50%
+}
+.btn {
+  display: block; margin-bottom: 15px
+}
+body {
+  padding-top: 60px;
 }
