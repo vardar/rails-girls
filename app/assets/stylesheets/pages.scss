@@ -12,8 +12,13 @@ img:hover {border-color: #A9A9; border-style: solid;
   width: 50%
 }
 .btn {
-  display: block; margin-bottom: 15px
+  display: block; margin-bottom: 15px; color: white;
 }
+
+.btn_old {
+  display: block; margin-bottom: 15px; color: black;
+}
+
 body {
   padding-top: 60px;
 }
