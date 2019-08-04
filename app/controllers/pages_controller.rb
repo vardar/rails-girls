@@ -7,4 +7,6 @@ class PagesController < ApplicationController
   end
   def newplan
   end
+  def actplan
+  end
 end

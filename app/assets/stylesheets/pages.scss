@@ -9,10 +9,14 @@ img:hover {border-color: #A9A9; border-style: solid;
 }
 
 .static_image {
-  width: 50%
+  width: 50%; margin-bottom: 15px;
 }
 .btn {
   display: block; margin-bottom: 15px; color: white;
+}
+
+.btn_new {
+  display: block; margin-bottom: 15px; color: black;
 }
 
 .btn_old {
@@ -24,4 +28,12 @@ body {
 }
 .vodnyplan_image {
   width: 50%; border: 1px solid #0000; margin-bottom: 10px;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
 }

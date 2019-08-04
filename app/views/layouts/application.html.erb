@@ -9,10 +9,9 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
+  <div class="box" id=left>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -27,9 +26,13 @@
         <!--<li><a href="/ideas">Príspevky</a></li>-->
         <li><a href="/pages/info">Čo je to vodný plán?</a></li>
       </ul>
-      <%= link_to "https://www.minzp.sk/", target: :_blank do %>
-          <%= image_tag 'mzpvelke.jpg', :class => "logo_image" %>
-      <% end %>
+    </div>
+  </div>
+  <div class="box" >
+    <div id=right>
+    <%= link_to "https://www.minzp.sk/", target: :_blank do %>
+        <%= image_tag 'mzpvelke.jpg', :class => "logo_image" %>
+    <% end %>
     </div>
   </div>
 </nav>
