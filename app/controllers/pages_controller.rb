@@ -9,4 +9,10 @@ class PagesController < ApplicationController
   end
   def actplan
   end
+  def dunajvisla
+  end
+  def harmonogram
+  end
+  def vodoproblemy
+  end
 end

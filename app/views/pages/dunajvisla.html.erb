@@ -1,0 +1,13 @@
+<%= link_to pages_newplan_path do %>
+  <% image_tag 'budvp1.png' , :class => "static_image"%>
+<% end %>
+<div class="block">
+  <%= link_to pages_harmonogram_path do %>
+      <button type="button" class="btn_new btn-primary btn-lg ">Časový a vecný harmonogram</button>
+    <% end %>
+  <%= link_to pages_vodoproblemy_path do %>
+      <button type="button" class="btn_new btn-primary btn-lg ">Významné vodohospodárske problémy</button>
+    <% end %>
+      <button type="button" class="btn btn-secondary btn-lg" disabled>Plány manažmentu povodia Dunaja a povodia Visly</button>
+      <button type="button" class="btn btn-secondary btn-lg" disabled>Vodný plán Slovenska (aktualizácia 2021)</button>
+</div>
