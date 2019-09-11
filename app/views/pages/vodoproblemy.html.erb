@@ -2,11 +2,25 @@
   <% image_tag 'budvp1.png' , :class => "static_image"%>
 <% end %>
 <div class="block">
-    <%= link_to "https://docs.google.com/forms/d/e/1FAIpQLSf4rlAjCNZr75xGOsb2Pw8s4bio8aLdT4B5F8LAce9kUE3xCQ/viewform?usp=sf_link", target: :_blank do %>
-      <button type="button" class="btn_new btn-primary btn-lg ">Podnety od verejnosti (dotazník)</button>
+  <%= link_to pages_newplan_path do %>
+      <button type="button" class="btn_new btn-primary btn-lg" >Plány manažmentu povodia Dunaja a Visly</button>
     <% end %>
-    <button type="button" class="btn btn-secondary btn-lg" disabled>Seminár v rámci konzultácií s verejnosťou (pripravujeme)</button>
-    <button type="button" class="btn btn-secondary btn-lg" disabled>Zverejnenie na pripomienkovanie verejnosti významných vodohospodárskych problémov (zverejnenie 22.12.2019-22.06.2020)</button>
-    <button type="button" class="btn btn-secondary btn-lg" disabled>Vyhodnotenie zaslaných pripomienok</button>
-    <button type="button" class="btn btn-secondary btn-lg" disabled>Výstupný dokument</button>
+  <%= link_to pages_harmonogram_path do %>
+      <button type="button" class="btn_new btn-primary btn-lg " style="margin-left:50px">Časový a vecný harmonogram</button>
+    <% end %>
+
+  <%= link_to pages_dunajvisla_path do %>
+          <button type="button" class="btn_new btn-primary btn-lg "style="margin-left:50px">Významné vodohospodárske problémy</button>
+    <% end %>
+    <%= link_to "https://docs.google.com/forms/d/e/1FAIpQLSf4rlAjCNZr75xGOsb2Pw8s4bio8aLdT4B5F8LAce9kUE3xCQ/viewform?usp=sf_link", target: :_blank do %>
+      <button type="button" class="btn_new btn-primary btn-lg "style="margin-left:100px">Podnety od verejnosti (dotazník)</button>
+    <% end %>
+    <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px" title="ahoj" disabled>Seminár v rámci konzultácií s verejnosťou</button>
+    <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Zverejnenie na pripomienkovanie verejnosti významných vodohospodárskych problémov (zverejnenie 22.12.2019-22.06.2020)</button>
+    <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Vyhodnotenie zaslaných pripomienok</button>
+    <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Výstupný dokument</button>
+    <button type="button" class="btn btn-secondary btn-lg" style="margin-left:50px" disabled>Plány manažmentu povodia Dunaja a povodia Visly</button>
+    <button type="button" class="btn btn-secondary btn-lg" style="margin-left:50px" disabled>Vodný plán Slovenska (aktualizácia 2021)</button>
+    <button type="button" class="btn btn-secondary btn-lg" disabled>Plány manažmentu povodňového rizika SR</button>
+    <button type="button" class="btn btn-secondary btn-lg" disabled>Plán rozvoja verejných vodovodov a verejných kanalizácií</button>
 </div>
