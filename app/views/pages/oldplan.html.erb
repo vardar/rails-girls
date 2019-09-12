@@ -1,8 +1,9 @@
-<%= image_tag 'staryvp1.png', :class => "static_image"%>
-
+<%= link_to pages_vodny_plan_path do %>
+  <%= image_tag 'staryvp1.png', :class => "style_image"%>
+<% end %>
 <div class="block">
 <%= link_to "https://www.minzp.sk/files/sekcia-vod/vodny-plan-sr.pdf", target: :_blank do %>
-  <button type="button" class="btn_old btn-warning btn-lg">Vodný plán Slovenska 2009</button>
+  <button type="button" class="btn_old btn-warning btn-lg" >Vodný plán Slovenska 2009</button>
 <% end %>
 
 <%= link_to "https://www.minzp.sk/files/sekcia-vod/vodny-plan-sr_mapove-prilohy.zip", target: :_blank do %>
