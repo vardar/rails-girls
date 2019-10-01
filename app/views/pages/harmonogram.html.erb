@@ -12,7 +12,9 @@
       <button type="button" class="btn_new btn-primary btn-lg " style="margin-left:100px">Zverejnenie na pripomienkovanie verejnosti</button>
     <% end %>
 
-      <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px" disabled>Seminár v rámci konzultácií s verejnosťou</button>
+  <%= link_to "public/assets/zaznam.pdf", target: :_blank do %>
+      <button type="button" class="btn_new btn-primary btn-lg" style="margin-left:100px">Seminár v rámci konzultácií s verejnosťou</button>
+  <% end %>
       <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px" disabled>Vyhodnotenie zaslaných pripomienok</button>
       <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px" disabled>Výstupný dokument</button>
   <%= link_to pages_vodoproblemy_path do %>
