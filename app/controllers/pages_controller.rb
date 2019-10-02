@@ -15,4 +15,8 @@ class PagesController < ApplicationController
   end
   def vodoproblemy
   end
+  def zaznam
+  end
+  def povodne
+  end
 end

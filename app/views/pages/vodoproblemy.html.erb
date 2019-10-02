@@ -12,15 +12,24 @@
   <%= link_to pages_dunajvisla_path do %>
           <button type="button" class="btn_new btn-primary btn-lg "style="margin-left:50px">Významné vodohospodárske problémy</button>
     <% end %>
-    <%= link_to "https://forms.gle/kod4sLNGsNgHS4656", target: :_blank do %>
+
+  <%= link_to "https://forms.gle/kod4sLNGsNgHS4656", target: :_blank do %>
       <button type="button" class="btn_new btn-primary btn-lg "style="margin-left:100px">Podnety od verejnosti (dotazník)</button>
     <% end %>
-    <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px" disabled>Seminár v rámci konzultácií s verejnosťou</button>
+
+  <%= link_to "https://forms.gle/sh48zY3BpJ8DbwpW7", target: :_blank do %>
+    <button type="button" class="btn_new btn-primary btn-lg" style="margin-left:100px">Seminár v rámci konzultácií s verejnosťou (plánovaný termín 6.11.2019)</button>
+  <% end %>
+
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Zverejnenie na pripomienkovanie verejnosti významných vodohospodárskych problémov (zverejnenie 22.12.2019-22.06.2020)</button>
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Vyhodnotenie zaslaných pripomienok</button>
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Výstupný dokument</button>
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:50px" disabled>Plány manažmentu povodia Dunaja a povodia Visly</button>
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:50px" disabled>Vodný plán Slovenska (aktualizácia 2021)</button>
-    <button type="button" class="btn btn-secondary btn-lg" disabled>Plány manažmentu povodňového rizika SR</button>
+
+  <%= link_to pages_povodne_path do %>
+    <button type="button" class="btn_new btn-primary btn-lg">Plány manažmentu povodňového rizika SR</button>
+  <% end %>
+  
     <button type="button" class="btn btn-secondary btn-lg" disabled>Plán rozvoja verejných vodovodov a verejných kanalizácií</button>
 </div>
