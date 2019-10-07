@@ -1,4 +1,4 @@
-<%= link_to pages_dunajvisla_path do %>
+<%= link_to pages_vodoproblemy_path do %>
   <% image_tag 'budvp1.png' , :class => "static_image"%>
 <% end %>
 <div class="block">
@@ -17,11 +17,15 @@
       <button type="button" class="btn_new btn-primary btn-lg "style="margin-left:100px">Podnety od verejnosti (dotazník)</button>
     <% end %>
 
-<%= link_to pages_seminar_path do %>
-    <button type="button" class="btn_new btn-primary btn-lg" style="margin-left:100px">Seminár v rámci konzultácií s verejnosťou (plánovaný termín 6.11.2019)</button>
+<%= link_to pages_vodoproblemy_path do %>
+    <button type="button" class="btn_new btn-primary btn-lg" style="margin-left:100px" >Seminár v rámci konzultácií s verejnosťou (plánovaný termín 6.11.2019)</button>
 <% end %>
-
-
+<%= link_to "/pozvanka.pdf", target: :_blank do %>
+    <button type="button" class="btn_new btn-primary btn-lg" style="margin-left:150px" >Pozvánka</button>
+<% end %>
+<%= link_to "https://forms.gle/sZJgJqE51JH35pGx7", target: :_blank do %>
+    <button type="button" class="btn_new btn-primary btn-lg" style="margin-left:150px" >Prihláška</button>
+<% end %>
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Zverejnenie na pripomienkovanie verejnosti významných vodohospodárskych problémov (zverejnenie 22.12.2019-22.06.2020)</button>
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Vyhodnotenie zaslaných pripomienok</button>
     <button type="button" class="btn btn-secondary btn-lg" style="margin-left:100px"disabled>Výstupný dokument</button>

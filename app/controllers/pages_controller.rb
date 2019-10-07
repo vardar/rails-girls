@@ -19,4 +19,6 @@ class PagesController < ApplicationController
   end
   def povodne
   end
+  def seminar
+  end
 end
