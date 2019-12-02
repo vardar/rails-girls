@@ -21,4 +21,6 @@ class PagesController < ApplicationController
   end
   def seminar
   end
+  def prezentacie
+  end
 end
