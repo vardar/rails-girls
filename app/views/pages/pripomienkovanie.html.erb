@@ -1,0 +1,16 @@
+<%= link_to pages_vodoproblemy_path do %>
+  <% image_tag 'budvp1.png' , :class => "static_image" %>
+<% end %>
+<div class="block">
+
+<%= link_to pages_vodoproblemy_path do %>
+  <button type="button" class="btn_new btn-primary btn-lg">Späť</button>
+<% end %>
+
+<%= link_to "/problemy-dunaj.pdf", target: :_blank do %>
+  <% image_tag 'problemy-dunaj.jpeg' , :class => "prezentacie_image", :title => "Významné vodohospodárske problémy"%>
+<% end %>
+
+<%= link_to "/problemy-visla.pdf", target: :_blank do %>
+  <% image_tag 'problemy-visla.jpeg' , :class => "prezentacie_image", :title => "Dotazník k Významným vodohospodárskym problémom"%>
+<% end %>

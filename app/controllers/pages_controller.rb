@@ -23,4 +23,6 @@ class PagesController < ApplicationController
   end
   def prezentacie
   end
+  def pripomienkovanie
+  end
 end
